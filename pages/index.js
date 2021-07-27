@@ -23,7 +23,7 @@ const Home = () => {
         <div className={styles["slider"]}>
           {
             arrayImage.map(({id,name})=> (
-              <Link href={name}>
+              <Link href={name} key={id} >
               <a key={id} className={styles["sunset"]}>
                 <AnimatePresence>
                 <motion.img
