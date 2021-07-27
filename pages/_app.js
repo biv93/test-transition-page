@@ -1,7 +1,11 @@
-import '../styles/globals.css'
-
+import '../styles/globals.scss'
+import { AnimateSharedLayout } from 'framer-motion';
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <AnimateSharedLayout>
+      <Component {...pageProps} />
+    </AnimateSharedLayout>
+    )
 }
 
 export default MyApp
