@@ -24,7 +24,7 @@ const Home = () => {
           {
             arrayImage.map(({id,name})=> (
               <Link href={name}>
-              <a className={styles["sunset"]}>
+              <a key={id} className={styles["sunset"]}>
                 <AnimatePresence>
                 <motion.img
                   layoutId={name}
